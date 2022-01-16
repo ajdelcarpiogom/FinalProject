@@ -11,11 +11,10 @@ We decided to retrieve data from Our World in Data (OWID) as a provisional datab
 
 ##### Questions we hope to answer with the data:
  
-* How correlated were the number of tests administered and total number of new covid-19 cases?
+* What is the correlation between the number of tests administered and the total number of new covid-19 cases?
 * What relation exists between tests administered and total number of deaths?
 * Does an increase in the number of vaccinated people have an effect on total new covid-19 cases?
-* Is the Omicron variant responsible for less deaths than the original Covid-19 strain?
-* Are higher numbers of new cases associated with an increase in the mortality rate?
+* How does each variant contribute to the number of cases and deaths?
 
 ## Link to Data and Resources:
 
