@@ -10,4 +10,9 @@ Our topic was to develop the analysis of vaccination efficiency and testing effi
 We decided to retrieve data from Our World in Data (OWID) as a provisional database as well as the geographical data from the Johns Hopkins University COVID-19 database. Luckily enough, OWID began to use the data from JHU in November of 2020 so using both these databases won’t deter us from mixing data.
 
 ##### Questions we hope to answer with the data:
-  - 
+ 
+* How correlated were the number of tests administered and total number of new covid-19 cases?
+* What relation exists between tests administered and total number of deaths?
+* Does an increase in the number of vaccinated people have an effect on total new covid-19 cases?
+* Is the Omicron variant responsible for less deaths than the original Covid-19 strain?
+* Are higher numbers of new cases associated with an increase in the mortality rate?
