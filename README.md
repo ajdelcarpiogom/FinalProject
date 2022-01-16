@@ -9,14 +9,14 @@ The COVID-19 pandemic became the first non-influenza pandemic to affect more tha
 
 ## Questions we want to find answers to:
 
-**Analyze the efficiency of the test by comparing the number of new covid cases to the number of test performed
-**Analyze the efficiency of the test by comparing the number of new covid deaths to the number of test performed
-**Analyze the efficiency of the test by comparing the number of new covid cases to the number of vaccinated persons.
-**Analyze the impact of the different covid variants In order to verify if Omicron is indeed more mild than the other variants.
+* Analyze the efficiency of the test by comparing the number of new covid cases to the number of test performed
+* Analyze the efficiency of the test by comparing the number of new covid deaths to the number of test performed
+* Analyze the efficiency of the test by comparing the number of new covid cases to the number of vaccinated persons.
+* Analyze the impact of the different covid variants In order to verify if Omicron is indeed more mild than the other variants.
 
 ## Database
 
-**Data we are using and why:
+* Data we are using and why:
 
 We are using the data from “Our World in Data”(OWID) which is a project of the Global Change Data Lab, a non-profit organization based in the United Kingdom (Registered Charity Number 1186433)( https://ourworldindata.org)
 OWID have created a github in order to collect on a daily basis the data of the covid-19 for 241 locations (by country, continent…).
