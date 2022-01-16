@@ -21,11 +21,9 @@ We decided to retrieve data from Our World in Data (OWID) as a provisional datab
 
 * “Our World in Data”(OWID) ( https://ourworldindata.org). 
 * OWID Github page (https://github.com/owid/covid-19-data).
-* "JHU COVID-19 Dashboard [https://www.arcgis.com/apps/dashboards/bda7594740fd40299423467b48e9ecf6]
-
 
 ## Machine Learning Model Description:
 
-As vaccination is the main factual solution for the covid-19, we will build a supervised machine learning model to see if the number of vaccinated people can help predict the number of new cases.
+As vaccination is the main factual solution for the covid-19, we will build a supervised machine learning model to see if the number of vaccinated people can help predict the number of new deaths.
 
 As such, we have created a provisional machine learning model that stands in for the final machine learning model. This model is structured to take data in from the provisional database aforementioned, and has the ability to output labels for the input data. 
