@@ -21,6 +21,8 @@ We decided to retrieve data from Our World in Data (OWID) as a provisional datab
 
 * “Our World in Data”(OWID) ( https://ourworldindata.org). 
 * OWID Github page (https://github.com/owid/covid-19-data).
+* "Johns Hopkins Dashboard (https://www.arcgis.com/apps/dashboards/bda7594740fd40299423467b48e9ecf6)
+
 
 ## Machine Learning Model Description:
 
