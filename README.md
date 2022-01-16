@@ -22,3 +22,9 @@ We decided to retrieve data from Our World in Data (OWID) as a provisional datab
 We are using the data from “Our World in Data”(OWID) as a provisional database standing in for the final database. “Our World in Data” (OWID) is a project from the Global Change Data Lab, a non-profit organization based in the United Kingdom (Registered Charity Number 1186433)( https://ourworldindata.org). The selected sample data mimics the expected final database structure in regard to …., and is connected to the draft machine learning module.
 
 Overall, through active updates to its github, OWID strives to collect data on a daily basis with respect to covid-19 cases over 241 locations (by country, continent, etc.). Link: https://github.com/owid/covid-19-data 
+
+## Machine Learning Model Description:
+
+As vaccination is the main factual solution for the covid-19, we will build a supervised machine learning model to see if the number of vaccinated people can help predict the number of new cases.
+
+As such, we have created a provisional machine learning model that stands in for the final machine learning model. This model is structured to take data in from the provisional database aforementioned, and has the ability to output labels for the input data. 
