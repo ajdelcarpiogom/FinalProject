@@ -24,7 +24,7 @@ OWID have created a github in order to collect on a daily basis the data of the 
 Link: https://github.com/owid/covid-19-data 
 
 
-## Machine Learning Model:
+## Machine Learning Model
 
 As vaccination is the main factual solution for the covid-19, we will build a supervised machine learning model to see if the number of vaccinated people can help predict the number of new cases.
 
