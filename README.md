@@ -26,4 +26,4 @@ We decided to retrieve data from Our World in Data (OWID) as a provisional datab
 ## Machine Learning Model Description:
 
 After many suggested ideas for the prevention of COVID-19 such as the vaccination, we will be building supervised machine learning models in order to visualize the statistics and to test whether the data is enough evidence to support our hypotheses aforementioned above.
-For these models, we will be primarily using R/RStudio and Python in Google Colab/Jupyter Notebook.
+For these models, we will be primarily using R/RStudio and Python in Google Colab/Jupyter Notebook. 
