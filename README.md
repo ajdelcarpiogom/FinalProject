@@ -107,4 +107,4 @@ excess_mortality_cumulative_per_million|"Human Mortality Database (2021), World 
 
 ## Analysis of the Covid-19 impact per continents with Tableau
 The tableau story can bee view in the follow link [link to dashboard]
-https://public.tableau.com/app/profile/mouhamadou.thiobane/viz/FinalProjectCovid-19Analysis/Analysisofthecovid-19AroundtheWorld?publish=yes
+(https://public.tableau.com/app/profile/mouhamadou.thiobane/viz/FinalProjectCovid-19Analysis/Analysisofthecovid-19AroundtheWorld?publish=yes)
