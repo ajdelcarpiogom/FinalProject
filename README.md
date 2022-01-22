@@ -104,3 +104,7 @@ excess_mortality_cumulative_per_million|"Human Mortality Database (2021), World 
 * cleaned_data_andrea.csv (Cleaned_Data_by_location) = Reduction of the information on the owid-covid-data.csv to keep the data needed for our ML model 
 * continent_cleaned_data_Mouhamadou.csv(Cleaned_Data_by_continents) = Reduction of the information on the owid-covid-data.csv to keep the data needed for our Tableau Analysis  
 ## Database ![Dataset Draft](https://user-images.githubusercontent.com/89410157/150649369-a40da8a0-0775-4421-b745-973e064261a4.png)
+
+## Analysis of the Covid-19 impact per continents with Tableau
+
+https://public.tableau.com/app/profile/mouhamadou.thiobane/viz/FinalProjectCovid-19Analysis/Analysisofthecovid-19AroundtheWorld?publish=yes
