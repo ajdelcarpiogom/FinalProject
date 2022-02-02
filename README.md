@@ -105,11 +105,23 @@ excess_mortality_cumulative_per_million|"Human Mortality Database (2021), World 
 * continent_cleaned_data_Mouhamadou.csv(Cleaned_Data_by_continents) = Reduction of the information on the owid-covid-data.csv to keep the data needed for our Tableau Analysis  
 ## Database ![Dataset Draft](https://user-images.githubusercontent.com/89410157/150649369-a40da8a0-0775-4421-b745-973e064261a4.png)
 
+# Looking at the Data
+  - I decided to play around a little bit with the data as well as to look at it and I created two maps that would allow us to pick the dates from January 1st, 2020 to January 18th, 2022 and view the cases as well as the deaths as a start.
+  - Mouhamadou played with Tableau in order to view the continental and intercontinental trends.
+
+## Maps
+
 ## Analysis of the Covid-19 impact per continents with Tableau
 The tableau story can bee view in the follow links:
 * Analysis per continents : [link to dashboard](https://public.tableau.com/app/profile/mouhamadou.thiobane/viz/FinalProjectCovid-19Analysis/Analysisofthecovid-19AroundtheWorld?publish=yes)
 * Analysis per selected countries [link to dashboard](https://public.tableau.com/app/profile/mouhamadou.thiobane/viz/Analysisofthecovid-19perrandomselectedcountries/Analysisofthecovid-19perrandomselectedcountries?publish=yes)
 
+# Cleaning the Data
+  - Some things we noticed were that the data had many null values when it came to cases, vaccinations, tests, and deaths. We do have to realize that COVID spread from China in the beginning of March so that explains the cases for other countries, the vaccination wasn’t FDA approved until November of 2020, the deaths came after COVID was introduced to other countries, and tests were made shortly after January 28th of 2020 but we have to keep in mind that they are not that easily accessible as they are in the states.
+  - We replaced those null values with 0 and also removed the rows where the location and the continent was the same. Those rows were just the data of the continents and since we didn’t need them we dropped them.
+
+#
+  
 ## Correlation Analysis of the Covid-19 impact per continents with R
 
 ![Screen Shot 2022-01-30 at 11 35 57 PM](https://user-images.githubusercontent.com/90708311/151739586-c13316b5-fd86-47ff-aebc-72182461b2ff.png)
