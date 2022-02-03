@@ -39,6 +39,11 @@ For these models, we will be primarily using R/RStudio and Python in Google Cola
   - Mouhamadou played with Tableau in order to view the continental and intercontinental trends.
 
 ## Maps
+### Cases
+![image](https://user-images.githubusercontent.com/57331058/152260610-63bdb45c-419b-4e3d-8cec-6b834355376a.png)
+
+### Deaths
+![image](https://user-images.githubusercontent.com/57331058/152260776-7efd40a3-be33-4d10-9ebe-0023fa53bdb6.png)
 
 ## Analysis of the Covid-19 impact per continents with Tableau
 The tableau story can bee view in the follow links:
