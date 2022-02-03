@@ -1,5 +1,6 @@
 # FinalProject
 
+Slide Deck Link [https://docs.google.com/presentation/d/1ESH3hlesa9KwhYse6mnfTc9szfOFGR59yVGjwGLGfOI/edit?usp=sharing]
 ## Introduction
 
 The COVID-19 pandemic became the first non-influenza pandemic to affect more than 200 countries as declared in March of 2020. It has caused a worldwide panic since it negatively affected the economy, employment, healthcare systems, and more. In December 2020, the first COVID vaccine became FDA approved and available to those of 16 years and older which helped contribute to a decrease in hospitalizations all around the world as well as a reduction in cases.
