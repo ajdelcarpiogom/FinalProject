@@ -35,14 +35,14 @@ For these models, we will be primarily using R/RStudio and Python in Google Cola
 ## Database ![Dataset Draft](https://user-images.githubusercontent.com/89410157/150649369-a40da8a0-0775-4421-b745-973e064261a4.png)
 
 # Looking at the Data
-  - I decided to play around a little bit with the data as well as to look at it and I created two maps that would allow us to pick the dates from January 1st, 2020 to January 18th, 2022 and view the cases as well as the deaths as a start.
+  - Andrea decided to play around a little bit with the data as well as to look at it and I created two maps that would allow us to pick the dates from January 1st, 2020 to January 18th, 2022 and view the cases as well as the deaths as a start.
   - Mouhamadou played with Tableau in order to view the continental and intercontinental trends.
 
 ## Maps
-### Cases
+### Cases Over Time
 ![image](https://user-images.githubusercontent.com/57331058/152260610-63bdb45c-419b-4e3d-8cec-6b834355376a.png)
 
-### Deaths
+### Deaths Over Time
 ![image](https://user-images.githubusercontent.com/57331058/152260776-7efd40a3-be33-4d10-9ebe-0023fa53bdb6.png)
 
 ## Analysis of the Covid-19 impact per continents with Tableau
