@@ -30,9 +30,15 @@ After many suggested ideas for the prevention of COVID-19 such as the vaccinatio
 For these models, we will be primarily using R/RStudio and Python in Google Colab/Jupyter Notebook. 
 
 ## Database
-* owid-covid-data.csv (Complete_COVID-19_dataset) = Our dataset for the Alysis 
-* cleaned_data_andrea.csv (Cleaned_Data_by_location) = Reduction of the information on the owid-covid-data.csv to keep the data needed for our ML model 
-* continent_cleaned_data_Mouhamadou.csv(Cleaned_Data_by_continents) = Reduction of the information on the owid-covid-data.csv to keep the data needed for our Tableau Analysis  
+We used AWS to create our Database. The source was load to a bucket (mthiobane-finalproject). Then we have created a server (finalproject) to link the server to pgadmin.
+We have cleaned the data through colab to created two CSV files:
+* Cleaned_Data_by_location = Reduction of the information on the owid-covid-data.csv to keep the data needed for our tableau analysis per the selected countries.
+* Cleaned_Data_by_continents = Reduction of the information on the owid-covid-data.csv to keep the data needed for our Tableau Analysis by continents
+those files have been export to our local computer and load to the bucket.
+## S3 Bucket![S3Bucket](https://user-images.githubusercontent.com/89410157/152446781-aad23bfc-9b09-40f1-a23f-97e16cf49973.png)
+## PgAdmin table![PgAdmin tables](https://user-images.githubusercontent.com/89410157/152446796-ea8b6073-003e-4d05-a6e8-5a9e124ef348.png)
+
+ 
 ## Database ![Dataset Draft](https://user-images.githubusercontent.com/89410157/150649369-a40da8a0-0775-4421-b745-973e064261a4.png)
 
 # Looking at the Data
