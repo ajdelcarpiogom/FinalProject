@@ -62,15 +62,6 @@ The tableau story can bee view in the follow links:
   - We replaced those null values with 0 and also removed the rows where the location and the continent was the same. Those rows were just the data of the continents and since we didn’t need them we dropped them.
 
 #
-  
-## Correlation Analysis of the Covid-19 impact per continents with R
-
-![Screen Shot 2022-01-30 at 11 35 57 PM](https://user-images.githubusercontent.com/90708311/151739586-c13316b5-fd86-47ff-aebc-72182461b2ff.png)
-
-## Correlation Analysis: Graphs
-<img width="532" alt="Screen Shot 2022-01-30 at 11 40 21 PM" src="https://user-images.githubusercontent.com/90708311/151739966-1b3ad54b-bdc7-474b-9a82-9082b87619e3.png">
-
-<img width="543" alt="Screen Shot 2022-01-30 at 11 41 07 PM" src="https://user-images.githubusercontent.com/90708311/151740086-f2a7b7f0-4e60-4986-9895-9ef14f767ed2.png">
 
 ## Description of the data
 | column | source | category | description |
