@@ -62,6 +62,7 @@ The tableau story can bee view in the follow links:
 # Cleaning the Data
   - Some things we noticed were that the data had many null values when it came to cases, vaccinations, tests, and deaths. We do have to realize that COVID spread from China in the beginning of March so that explains the cases for other countries, the vaccination wasn’t FDA approved until November of 2020, the deaths came after COVID was introduced to other countries, and tests were made shortly after January 28th of 2020 but we have to keep in mind that they are not that easily accessible as they are in the states.
   - We replaced those null values with 0 and also removed the rows where the location and the continent was the same. Those rows were just the data of the continents and since we didn’t need them we dropped them.
+![image](https://user-images.githubusercontent.com/57331058/152705348-1c1f26dd-f13f-466e-8631-f0c43ab18cd2.png)
 
 #
 
