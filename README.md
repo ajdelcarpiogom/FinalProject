@@ -1,5 +1,6 @@
 # FinalProject
 
+[Slide Deck Link](https://docs.google.com/presentation/d/1ESH3hlesa9KwhYse6mnfTc9szfOFGR59yVGjwGLGfOI/edit?usp=sharing)
 ## Introduction
 
 The COVID-19 pandemic became the first non-influenza pandemic to affect more than 200 countries as declared in March of 2020. It has caused a worldwide panic since it negatively affected the economy, employment, healthcare systems, and more. In December 2020, the first COVID vaccine became FDA approved and available to those of 16 years and older which helped contribute to a decrease in hospitalizations all around the world as well as a reduction in cases.
@@ -27,6 +28,40 @@ We decided to retrieve data from Our World in Data (OWID) as a provisional datab
 
 After many suggested ideas for the prevention of COVID-19 such as the vaccination, we will be building supervised machine learning models in order to visualize the statistics and to test whether the data is enough evidence to support our hypotheses aforementioned above.
 For these models, we will be primarily using R/RStudio and Python in Google Colab/Jupyter Notebook. 
+
+## Database
+We used AWS to create our Database. The source was load to a bucket (mthiobane-finalproject). Then we have created a server (finalproject) to link the server to pgadmin.
+We have cleaned the data through colab to created two CSV files:
+* Cleaned_Data_by_location = Reduction of the information on the owid-covid-data.csv to keep the data needed for our tableau analysis per the selected countries.
+* Cleaned_Data_by_continents = Reduction of the information on the owid-covid-data.csv to keep the data needed for our Tableau Analysis by continents
+those files have been export to our local computer and load to the bucket.
+## S3 Bucket![S3Bucket](https://user-images.githubusercontent.com/89410157/152446781-aad23bfc-9b09-40f1-a23f-97e16cf49973.png)
+## PgAdmin table![PgAdmin tables](https://user-images.githubusercontent.com/89410157/152446796-ea8b6073-003e-4d05-a6e8-5a9e124ef348.png)
+
+ 
+## Database ![Dataset Draft](https://user-images.githubusercontent.com/89410157/150649369-a40da8a0-0775-4421-b745-973e064261a4.png)
+
+# Looking at the Data
+  - Andrea decided to play around a little bit with the data as well as to look at it and I created two maps that would allow us to pick the dates from January 1st, 2020 to January 18th, 2022 and view the cases as well as the deaths as a start.
+  - Mouhamadou played with Tableau in order to view the continental and intercontinental trends.
+
+## Maps
+### Cases Over Time
+![image](https://user-images.githubusercontent.com/57331058/152260610-63bdb45c-419b-4e3d-8cec-6b834355376a.png)
+
+### Deaths Over Time
+![image](https://user-images.githubusercontent.com/57331058/152260776-7efd40a3-be33-4d10-9ebe-0023fa53bdb6.png)
+
+## Analysis of the Covid-19 impact per continents with Tableau
+The tableau story can bee view in the follow links:
+* Analysis per continents : [link to dashboard](https://public.tableau.com/app/profile/mouhamadou.thiobane/viz/FinalProjectCovid-19Analysis/Analysisofthecovid-19AroundtheWorld?publish=yes)
+* Analysis per selected countries [link to dashboard](https://public.tableau.com/app/profile/mouhamadou.thiobane/viz/Analysisofthecovid-19perrandomselectedcountries/Analysisofthecovid-19perrandomselectedcountries?publish=yes)
+
+# Cleaning the Data
+  - Some things we noticed were that the data had many null values when it came to cases, vaccinations, tests, and deaths. We do have to realize that COVID spread from China in the beginning of March so that explains the cases for other countries, the vaccination wasn’t FDA approved until November of 2020, the deaths came after COVID was introduced to other countries, and tests were made shortly after January 28th of 2020 but we have to keep in mind that they are not that easily accessible as they are in the states.
+  - We replaced those null values with 0 and also removed the rows where the location and the continent was the same. Those rows were just the data of the continents and since we didn’t need them we dropped them.
+
+#
 
 ## Description of the data
 | column | source | category | description |
@@ -98,26 +133,4 @@ excess_mortality|"Human Mortality Database (2021), World Mortality Dataset (2021
 excess_mortality_cumulative|"Human Mortality Database (2021), World Mortality Dataset (2021)"|Excess mortality|"Percentage difference between the cumulative number of deaths since 1 January 2020 and the cumulative projected deaths for the same period based on previous years. For more information, see https://github.com/owid/covid-19-data/tree/master/public/data/excess_mortality"
 excess_mortality_cumulative_absolute|"Human Mortality Database (2021), World Mortality Dataset (2021)"|Excess mortality|"Cumulative difference between the reported number of deaths since 1 January 2020 and the projected number of deaths for the same period based on previous years. For more information, see https://github.com/owid/covid-19-data/tree/master/public/data/excess_mortality"
 excess_mortality_cumulative_per_million|"Human Mortality Database (2021), World Mortality Dataset (2021)"|Excess mortality|"Cumulative difference between the reported number of deaths since 1 January 2020 and the projected number of deaths for the same period based on previous years, per million people. For more information, see https://github.com/owid/covid-19-data/tree/master/public/data/excess_mortality"
-
-## Database
-* owid-covid-data.csv (Complete_COVID-19_dataset) = Our dataset for the Alysis 
-* cleaned_data_andrea.csv (Cleaned_Data_by_location) = Reduction of the information on the owid-covid-data.csv to keep the data needed for our ML model 
-* continent_cleaned_data_Mouhamadou.csv(Cleaned_Data_by_continents) = Reduction of the information on the owid-covid-data.csv to keep the data needed for our Tableau Analysis  
-## Database ![Dataset Draft](https://user-images.githubusercontent.com/89410157/150649369-a40da8a0-0775-4421-b745-973e064261a4.png)
-
-## Analysis of the Covid-19 impact per continents with Tableau
-The tableau story can bee view in the follow links:
-* Analysis per continents : [link to dashboard](https://public.tableau.com/app/profile/mouhamadou.thiobane/viz/FinalProjectCovid-19Analysis/Analysisofthecovid-19AroundtheWorld?publish=yes)
-* Analysis per selected countries [link to dashboard](https://public.tableau.com/app/profile/mouhamadou.thiobane/viz/Analysisofthecovid-19perrandomselectedcountries/Analysisofthecovid-19perrandomselectedcountries?publish=yes)
-
-## Correlation Analysis of the Covid-19 impact per continents with R
-
-![Screen Shot 2022-01-30 at 11 35 57 PM](https://user-images.githubusercontent.com/90708311/151739586-c13316b5-fd86-47ff-aebc-72182461b2ff.png)
-
-## Correlation Analysis: Graphs
-<img width="532" alt="Screen Shot 2022-01-30 at 11 40 21 PM" src="https://user-images.githubusercontent.com/90708311/151739966-1b3ad54b-bdc7-474b-9a82-9082b87619e3.png">
-
-<img width="543" alt="Screen Shot 2022-01-30 at 11 41 07 PM" src="https://user-images.githubusercontent.com/90708311/151740086-f2a7b7f0-4e60-4986-9895-9ef14f767ed2.png">
-
-
 
