@@ -47,6 +47,10 @@ those files have been export to our local computer and load to the bucket.
   - Andrea decided to play around a little bit with the data as well as to look at it and I created two maps that would allow us to pick the dates from January 1st, 2020 to January 18th, 2022 and view the cases as well as the deaths as a start.
   - Mouhamadou played with Tableau in order to view the continental and intercontinental trends.
 
+## Heatmap
+Below is the overall data created into a heatmap in order to visualize the variables and their level of correlation.
+![image](https://user-images.githubusercontent.com/57331058/153116802-d6458c8d-4e61-4701-a3b8-f5dc6b33e662.png)
+
 ## Maps
 ### Cases Over Time
 ![image](https://user-images.githubusercontent.com/57331058/152260610-63bdb45c-419b-4e3d-8cec-6b834355376a.png)
