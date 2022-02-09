@@ -112,20 +112,29 @@ The modeling we decided to go with an ordinary least squares in order to estimat
 ### Results
 [Tests vs Deaths] – There is not enough information to support the hypothesis that these two are correlated.
 Ex: Zimbabwe
+
 [Tests vs Cases] – The tests performed around the world cannot predict the number of new cases. 
 Ex: Malta, Thailand, Netherlands.
+
 [Vaccinations vs Cases] – Here we see an abnormal finding that some countries have a positive correlation between the two.
 Ex: Slovenia, Ukraine, Russia, South Korea.
+
 [Vaccinations vs Deaths] – No correlation, these two variables are independent of each other.
 By looking at most countries and the variables we’ve decided to examine correlation, we don’t have enough information in order to say that the models support any correlation between these variables.
 We can take a look at Hungary in the tests vs deaths analysis and it’s one of the highest correlations we’ve actually seen.
+
 [Tests vs Deaths] – There is not enough information to support the hypothesis that these two are correlated.
 Ex: Zimbabwe
+
 [Tests vs Cases] – The tests performed around the world cannot predict the number of new cases. 
 Ex: Malta, Thailand, Netherlands.
+
 [Vaccinations vs Cases] – Here we see an abnormal finding that some countries have a positive correlation between the two.
 Ex: Slovenia, Ukraine, Russia, South Korea.
+
 [Vaccinations vs Deaths] – No correlation, these two variables are independent of each other.
+
+
 By looking at most countries and the variables we’ve decided to examine correlation, we don’t have enough information in order to say that the models support any correlation between these variables.
 We can take a look at Hungary in the tests vs deaths analysis and it’s one of the highest correlations we’ve actually seen.
 
