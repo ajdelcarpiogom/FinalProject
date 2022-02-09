@@ -64,7 +64,86 @@ The tableau story can bee view in the follow links:
   - We replaced those null values with 0 and also removed the rows where the location and the continent was the same. Those rows were just the data of the continents and since we didn’t need them we dropped them.
 ![image](https://user-images.githubusercontent.com/57331058/152705348-1c1f26dd-f13f-466e-8631-f0c43ab18cd2.png)
 
-#
+# Training the data
+First, we wanted to group each country's mean into three levels: whether they are low risk, medium risk, or high risk countries for COVID-19.
+![image](https://user-images.githubusercontent.com/57331058/153106220-630e9b8c-fd15-4321-b81c-fd33bd964e30.png)
+
+
+These are the three levels and their countries:
+![image](https://user-images.githubusercontent.com/57331058/153106324-3425e5a4-0f02-46f4-b701-a196fb38f752.png)
+![image](https://user-images.githubusercontent.com/57331058/153106356-303fb86b-8991-4ac5-a20c-17a5179fcec6.png)
+![image](https://user-images.githubusercontent.com/57331058/153106444-25ea1203-a0b2-4c2c-8a95-9f71c993c701.png)
+
+
+## Functions
+#### Pick_three()
+In order to pick one out of each risk level, a function called pick_three() was created:
+![image](https://user-images.githubusercontent.com/57331058/153106938-600dba8b-80ad-4224-b90b-b7cbcf4643ad.png)
+
+#### Make_df()
+Then, in order to create a dataframe with those three countries and all its data, we created a function that extracts each row from the countries_df where the location is in the list of the three countries from the pick_three() and creates a dataframe.
+![image](https://user-images.githubusercontent.com/57331058/153107221-a2cc9f18-b90a-4faa-aa5d-8ff4377f130e.png)
+
+#### Tests_vs_Deaths(), Tests_vs_Cases(), Vacs_vs_Deaths(), Vacs_vs_Cases()
+These functions were created in order to find the correlation coefficient of countries, having make_df() inside, and to view the summary of the correlation. These functions gave us numbers that allowed us to determine whether these variables had strong/weak correlation with one another and in different countries.
+
+# Modeling (OLS)
+The modeling we decided to go with an ordinary least squares in order to estimate the parameters in this linear regression model.
+ * Limitations: Large data set is necessary in order to obtain reliable results. The regression results are sensitive to functional form if the error term is not adequately interpreted, which can lead to widely varying conclusions, depending on how the regression is initially set up.
+ * Benefits: The statistical method reveals information about cost structures and can distinguish between different variables’ roles in affecting output. Coefficients can be interpreted in terms of cost drivers or how inputs contribute to output.
+
+![image](https://user-images.githubusercontent.com/57331058/153110955-e4606a90-b08c-4c2b-9cbc-a339e82b9b9c.png)
+
+![image](https://user-images.githubusercontent.com/57331058/153110999-7614480a-c782-4adc-a3f3-b4ddc38132d1.png)
+
+![image](https://user-images.githubusercontent.com/57331058/153111056-109efa57-917f-4bf3-b3e1-51cbb4ae1a19.png)
+
+![image](https://user-images.githubusercontent.com/57331058/153111105-d75d7bff-de25-4139-bf6e-650bb1d9da85.png)
+
+![image](https://user-images.githubusercontent.com/57331058/153111140-572a5d58-bebd-4c6f-b1a2-c237973f1902.png)
+
+![image](https://user-images.githubusercontent.com/57331058/153111166-6fa3c8ee-ae0a-4c1d-8739-ef1007a2dd48.png)
+
+![image](https://user-images.githubusercontent.com/57331058/153111195-25fff5f0-d276-4e52-8e26-ca579f383806.png)
+
+![image](https://user-images.githubusercontent.com/57331058/153111241-af578ef6-8ceb-4c4b-8567-8651bdb14c63.png)
+
+
+### Results
+[Tests vs Deaths] – There is not enough information to support the hypothesis that these two are correlated.
+Ex: Zimbabwe
+
+[Tests vs Cases] – The tests performed around the world cannot predict the number of new cases. 
+Ex: Malta, Thailand, Netherlands.
+
+[Vaccinations vs Cases] – Here we see an abnormal finding that some countries have a positive correlation between the two.
+Ex: Slovenia, Ukraine, Russia, South Korea.
+
+[Vaccinations vs Deaths] – No correlation, these two variables are independent of each other.
+By looking at most countries and the variables we’ve decided to examine correlation, we don’t have enough information in order to say that the models support any correlation between these variables.
+We can take a look at Hungary in the tests vs deaths analysis and it’s one of the highest correlations we’ve actually seen.
+
+[Tests vs Deaths] – There is not enough information to support the hypothesis that these two are correlated.
+Ex: Zimbabwe
+
+[Tests vs Cases] – The tests performed around the world cannot predict the number of new cases. 
+Ex: Malta, Thailand, Netherlands.
+
+[Vaccinations vs Cases] – Here we see an abnormal finding that some countries have a positive correlation between the two.
+Ex: Slovenia, Ukraine, Russia, South Korea.
+
+[Vaccinations vs Deaths] – No correlation, these two variables are independent of each other.
+
+
+By looking at most countries and the variables we’ve decided to examine correlation, we don’t have enough information in order to say that the models support any correlation between these variables.
+We can take a look at Hungary in the tests vs deaths analysis and it’s one of the highest correlations we’ve actually seen.
+
+### Recommendations
+Some countries don’t have enough information → with this project we found which countries need more COVID-19 surveys and provide that information for those who want a complete global dataset; encourage an increase of surveys in such countries.
+A study could be done to find out the efficiency of vaccination on new variants.
+Additional risk factors like those tied to demographics would be helpful to see what other variables are influencing a rise and decrease in total cases and number of reported deaths.
+We could also analysis the impact of the lock down on the new cases and deaths. 
+
 
 ## Description of the data
 | column | source | category | description |
